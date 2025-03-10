@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vídeos HTML5 </title>
+</head>
+<body>
+    <h1> Inserindo Vídeos com Hospedagem Própria </h1>
+    <video src="midia/video.mp4" width="500" height="500" controls></video> <!-- Forma mais simples -->
+    <video controls>
+        <source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="midia/video.mkv" type="video/mkv">
+        <source src="midia/video.ogv" type="video/ogg">
+        <p> Infelizmente o seu navagador não executa vídeos  <a href="midia/video.mp4" download="video.mp4" type="video/mp4">Clique aqui para fazer o download do vídeo</a></p>
+    </video>
+    <h1> Inserindo Vídeos Exteriores </h1>
+    <p> Best Music: &darr;</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/o_MT4YLhZxM?si=0Z0ZT1WiQ4NR9wzG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

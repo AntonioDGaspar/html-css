@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="min-width: width=device-width, initial-scale=1.0">
+    <title> Imagens Flexíveis </title>
+</head>
+<body>
+    <h1> Usando Imagens Flexíveis </h1>
+    <p> Redimencionar o navegador para a imagem mudar </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Grande">
+    </picture>
+    <h1> Usando Áudios </h1>
+    <p> Em baixo estão os áudios: </p>
+    <audio src="midia/zula:mini _Vandals.mp3" controls autoplay></audio> <!-- Forma mais simples de usar áudios -->
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/you're_not_wrong:roljui.mp3" type="audio/mpeg">
+        <source src="midia/you're_not_wrong:roljui.ogg" type="audio/ogg">
+        <source src="midia/you're_not_wrong:roljui.mp3" type="audio/wav">
+        <p> Infelizmente seu navegador não consegue rodar áudio <a href="midia/you're_not_wrong:roljui.mp3" download="you're_not_wrong:roljui.mp3" type="audio/mpeg"> Clique aqui para baixar a Música </a></p> <!-- O navegador vai tentar rodar os três sources de cima a baixo, se nenhum rodar o texto será exibido -->
+    </audio>
+</body>
+</html>
