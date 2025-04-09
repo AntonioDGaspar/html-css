@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Teste de Imagem de Fundo </title>
+    <style>
+        body {
+            height: 100vh;
+            /* Forma Extensa
+            
+                background-color: gray;
+                background-image: url(imagens/wallpaper002.jpg);
+                background-position: center top;
+                background-repeat: no-repeat;
+                background-size: cover;
+            */
+
+            /* ShortHard - Background 
+
+                Ordem: color  -> image -> position -> /size -> repeat -> attachment.
+
+            */
+            background: gray url("imagens/wallpaper002.jpg") center top /cover no-repeat fixed;
+
+        }
+
+        main {
+            background-color: white;
+            width: 600px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1> Teste de Imagem de Fundo </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo dicta corporis, voluptates quibusdam laboriosam temporibus eum a in doloribus neque veniam eveniet beatae nihil reiciendis tempora vero consectetur voluptate sapiente.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo dicta corporis, voluptates quibusdam laboriosam temporibus eum a in doloribus neque veniam eveniet beatae nihil reiciendis tempora vero consectetur voluptate sapiente.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo dicta corporis, voluptates quibusdam laboriosam temporibus eum a in doloribus neque veniam eveniet beatae nihil reiciendis tempora vero consectetur voluptate sapiente.
+        </p>
+    </main>
+</body>
+</html>
