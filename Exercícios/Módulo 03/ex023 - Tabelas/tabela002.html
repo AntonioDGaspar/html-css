@@ -11,14 +11,29 @@
 
         table {
             border-collapse: collapse;
+            position: relative;
         }
 
         thead{
-            background-color: gray;
+            background-color: grey;
         }
 
-        tfoot {
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: grey;
+        }
+
+        tbody > tr:nth-child(2n) {
             background-color: lightgray;
+        }
+
+        /*  nth-child(odd) --> Ímpar 
+            nth-child(even) --> Par
+        */
+
+        tfoot {
+            background-color: darkgray;
         }
 
         td, th {
@@ -43,11 +58,11 @@
     <table>
         <thead>
             <tr>
-                <th> Província </th>
-                <th> Capital </th>
-                <th> Código </th>
-                <th> Área </th>
-                <th> População </th>
+                <th scope="col"> Província </th>
+                <th scope="col"> Capital </th>
+                <th scope="col"> Código </th>
+                <th scope="col"> Área </th>
+                <th scope="col"> População </th>
             </tr>
         </thead>
         <tbody>
@@ -78,6 +93,20 @@
                 <td> HUA </td>
                 <td> 34 274 </td>
                 <td> 2 019 555 </td>
+            </tr>
+            <tr>
+                <td> Bié </td>
+                <td> Cuíto </td>
+                <td> BIE </td>
+                <td> 70 314 </td>
+                <td> 1 455 255 </td>
+            </tr>
+            <tr>
+                <td> Bengo </td>
+                <td> Caxito </td>
+                <td> BGO </td>
+                <td> 15 506 </td>
+                <td> 356 641 </td>
             </tr>
         </tbody>
         <tfoot>
