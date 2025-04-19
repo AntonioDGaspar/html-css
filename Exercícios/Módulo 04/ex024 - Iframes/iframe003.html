@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IFrames </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 95vw;
+            height: 500px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1> Faça uma Escolha </h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim magnam animi asperiores, fugit ducimus libero error itaque ullam modi excepturi ipsam vel! Possimus deleniti similique, eveniet accusantium ad debitis ullam? </p>
+    <ul>
+        <li> <a href="paginas/pag001.html" target="frame"> Página 1 </a> </li>
+        <li> <a href="paginas/pag002.html" target="frame"> Página 2 </a> </li>
+        <li> <a href="paginas/pag003.html" target="frame"> Página 3 </a> </li>
+    </ul>
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla molestias obcaecati repellat officia at magni dolor animi in quibusdam numquam aliquam accusantium ex esse dignissimos nostrum nemo minus, expedita illo? </p>
+    <iframe srcdoc="<h1> Hello </h1><p> Escolha uma opção </p>" frameborder="0" name="frame">
+        <p> Infelizmente o seu navegador não é compatível </p>
+    </iframe>
+</body>
+</html>
