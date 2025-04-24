@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(imagens/fundo-madeira.jpg);
+}
+
+#phone {
+    background-image: url(imagens/frame-iphone.png);
+    width: 311px;
+    height: 627px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#phone iframe {
+    position: absolute;
+    background-size: cover;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 475px;
+}
+
+#bt_home {
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    background-image: url(imagens/logo-home.jpg);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+#bt_git {
+    position: absolute;
+    top: 190px;
+    right: 20px;
+    background-image: url(imagens/logo-github.jpg);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+#bt_yt {
+    position: absolute;
+    top: 270px;
+    right: 20px;
+    background-image: url(imagens/logo-youtube.jpg);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+#bt_insta {
+    position: absolute;
+    top: 350px;
+    right: 20px;
+    background-image: url(imagens/logo-instagram.jpg);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+#bt_face {
+    position: absolute;
+    top: 430px;
+    right: 20px;
+    background-image: url(imagens/logo-facebook.jpg);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
