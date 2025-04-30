@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário </title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST">
+        <p>
+            <label for="est"> Província: </label>
+            <select name="est" id="est">
+                <optgroup label="Região Norte">
+                    <option value="LU"> Luanda </option>
+                    <option value="BG"> Benguela </option>
+                    <option value="UJ"> Uíje </option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="HB"> Huambo </option>
+                    <option value="NB"> Namíbe </option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="prof"> Profissão: </label>
+            <input type="text" name="prof" id="prof" list="lis_prof">
+            <datalist id="lis_prof">
+                <option value="ADM"> Administrador </option>
+                <option value="BTC"> Botânico </option>
+                <option value="DEV"> Desenvolvedor </option>
+                <option value="PRO"> Professor </option>
+            </datalist>
+        </p>
+        <p>
+            <label for="men"> Mensagem: </label> <br>
+            <textarea name="men" id="men" rows="10" cols="30"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
