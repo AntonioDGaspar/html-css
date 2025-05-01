@@ -86,6 +86,10 @@ TV / 4K Display -------> 1920px ou mais
         background-image: url(../imagens/back-tv.jpg);
     }
 
+    main {
+        width: 700px;
+    }
+
     img#tel { display: none; }
     img#pc { display: none; }
     img#tablet { display: none; }
