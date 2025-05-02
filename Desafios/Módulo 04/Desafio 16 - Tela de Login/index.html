@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tela de Login </title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/mobile.css">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <section id="login">
+        <div id="img"> </div>
+        
+        <div id="formu">
+            <h1> Login </h1>
+
+            <p> Seja Bem-vindo(a) novamente. Faça Login para poder acessar a sua conta e fazer as configurações no seu ambiente.</p>
+
+            <form action="cadastro.php" method="POST">
+                <div class="f_inputs">
+                    <label for="user" class="material-symbols-outlined">Person</label>
+                    <input type="text" name="user" id="user">
+                </div>
+                <div class="f_inputs">
+                    <label for="sen" class="material-symbols-outlined">Key</label>
+                    <input type="password" name="sen" id="sen">
+                </div>
+                <div>
+                    <input type="button" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>        
+    </section>
+</body>
+</html>
