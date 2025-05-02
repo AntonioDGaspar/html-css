@@ -36,8 +36,8 @@ main {
 
     transform: translate(-50%, -50%);
 
-    width: 250px;
-    height: 500px;
+    width: 300px;
+    height: 550px;
     border: 1px solid black;
     border-radius: 20px;
 
@@ -49,10 +49,7 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
 
     transition: width .3s, height .3s;
-}
-
-section#login h1, p, form {
-    padding: 10px;
+    transition-timing-function: ease; /* Transição mais Fluída */
 }
 
 div#img {
@@ -68,22 +65,72 @@ div#formu{
 
 #formu > h1 {
     text-align: center;
+    padding: 5px;
 }
 
 #formu > p {
     text-align: justify;
+    padding: 5px;
 }
 
-input, button {
-    padding: 3px;
+div.camp {
+    background-color: #5f2c82;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 5px;
 }
 
-input:button {
-    margin: 10px;
+div.camp label {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    width: 40px;
+    border-radius: 5px;
 }
 
-@media screen and (orientation: landscape) {
-    #login {
-        max-width: 700px;
-    }
+div.camp input {
+    background-color: #74b6b4;
+    border: none;
+    width: calc(100% - 55px);
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateY(-8px);
+}
+
+input[type=submit], button {
+    margin: 5px;
+    margin: auto;
+}
+
+input[type=submit] {
+    display: block;
+    font-size: 1.1em;
+    width: 95%;
+    height: 40px;
+    background-color: #49a09d;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+    color: #49a09d;
+    font-size: 1.1em;
+    border-color: #49a09d;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div span {
+    font-size: 0.8em;
+}
+
+input[type=submit]:hover, button:hover {
+    cursor: pointer;
+    background-color: #336361;
 }
