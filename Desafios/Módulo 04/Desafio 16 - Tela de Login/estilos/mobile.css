@@ -66,7 +66,15 @@ div#formu{
     display: block;
 }
 
-input {
+#formu > h1 {
+    text-align: center;
+}
+
+#formu > p {
+    text-align: justify;
+}
+
+input, button {
     padding: 3px;
 }
 

@@ -18,17 +18,20 @@
             <p> Seja Bem-vindo(a) novamente. Faça Login para poder acessar a sua conta e fazer as configurações no seu ambiente.</p>
 
             <form action="cadastro.php" method="POST">
-                <div class="f_inputs">
+                <div>
                     <label for="user" class="material-symbols-outlined">Person</label>
-                    <input type="text" name="user" id="user">
-                </div>
-                <div class="f_inputs">
-                    <label for="sen" class="material-symbols-outlined">Key</label>
-                    <input type="password" name="sen" id="sen">
+                    <input type="text" name="user" id="user" placeholder="Seu Usuário" autocomplete="email" maxlength="30" required>
                 </div>
                 <div>
-                    <input type="button" value="Enviar">
-                    <input type="reset" value="Limpar">
+                    <label for="sen" class="material-symbols-outlined">Key</label>
+                    <input type="password" name="sen" id="sen" placeholder="Sua Senha" autocomplete="current-password" minlength="8" maxlength="20" required>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <button>
+                        Esqueci a Senha 
+                    </button>
+                    <span class="material-symbols-outlined">email</span> 
                 </div>
             </form>
         </div>        
