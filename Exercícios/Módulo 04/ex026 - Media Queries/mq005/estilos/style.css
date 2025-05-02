@@ -22,7 +22,7 @@ header > h1 {
 }
 
 nav {
-    display: block;
+    display: none;
 }
 
 span#bgr {
