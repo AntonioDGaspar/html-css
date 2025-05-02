@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Media Query </title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1> Site Za Warudo </h1>
-        <nav>
+        <span id="bgr" class="material-symbols-outlined" onclick="clique ()">menu</span>
+        <nav id="menu">
             <ul>
-                <li> Hunter x Hunter </li>
-                <li> Sousou no Frieren </li>
-                <li> Dandadan </li>
-                <li> Naruto </li>
-                <li> Fullmetal Alquimisty </li>
+                <li id="oi"> <a href="#"> Hunter x Hunter </a> </li>
+                <li> <a href="#"> Sousou no Frieren </a> </li>
+                <li> <a href="#"> Dandadan </a> </li>
+                <li> <a href="#"> Naruto </a> </li>
+                <li> <a href="#"> Fullmetal Alquimisty </a> </li>
             </ul>
         </nav>
     </header>
@@ -30,10 +32,25 @@
 
             </p>
             <p> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod eaque error alias cum ab deserunt quae modi qui, laborum nostrum minus quo doloribus quibusdam architecto consectetur nobis consequuntur sint! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium provident ut eius nobis doloribus dolor unde amet? Adipisci facilis, amet maiores et libero deserunt enim modi, cumque ipsum corrupti natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quaerat iste maxime velit ipsa reiciendis laboriosam laudantium asperiores commodi officia minima, vel explicabo pariatur officiis enim dicta cupiditate! Doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui odio amet quisquam unde veritatis, delectus tenetur, aliquid omnis non blanditiis culpa quis sit inventore ut enim libero maxime aliquam exercitationem!</p><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod eaque error alias cum ab deserunt quae modi qui, laborum nostrum minus quo doloribus quibusdam architecto consectetur nobis consequuntur sint! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium provident ut eius nobis doloribus dolor unde amet? Adipisci facilis, amet maiores et libero deserunt enim modi, cumque ipsum corrupti natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quaerat iste maxime velit ipsa reiciendis laboriosam laudantium asperiores commodi officia minima, vel explicabo pariatur officiis enim dicta cupiditate! Doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui odio amet quisquam unde veritatis, delectus tenetur, aliquid omnis non blanditiis culpa quis sit inventore ut enim libero maxime aliquam exercitationem!
-
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod eaque error alias cum ab deserunt quae modi qui, laborum nostrum minus quo doloribus quibusdam architecto consectetur nobis consequuntur sint! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium provident ut eius nobis doloribus dolor unde amet? Adipisci facilis, amet maiores et libero deserunt enim modi, cumque ipsum corrupti natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quaerat iste maxime velit ipsa reiciendis laboriosam laudantium asperiores commodi officia minima, vel explicabo pariatur officiis enim dicta cupiditate! Doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui odio amet quisquam unde veritatis, delectus tenetur, aliquid omnis non blanditiis culpa quis sit inventore ut enim libero maxime aliquam exercitationem!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod eaque error alias cum ab deserunt quae modi qui, laborum nostrum minus quo doloribus quibusdam architecto consectetur nobis consequuntur sint! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium provident ut eius nobis doloribus dolor unde amet? Adipisci facilis, amet maiores et libero deserunt enim modi, cumque ipsum corrupti natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quaerat iste maxime velit ipsa reiciendis laboriosam laudantium asperiores commodi officia minima, vel explicabo pariatur officiis enim dicta cupiditate! Doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui odio amet quisquam unde veritatis, delectus tenetur, aliquid omnis non blanditiis culpa quis sit inventore ut enim libero maxime aliquam exercitationem!
             </p>
         </article>
     </main>
+
+    <script>
+        function clique () {
+            if (menu.style.display == "block") {
+                menu.style.display = "none"
+            }
+
+            else {
+                menu.style.display = "block"
+            }
+
+        }
+    </script>
 </body>
 </html>
