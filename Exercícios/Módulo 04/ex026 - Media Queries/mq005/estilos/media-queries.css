@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* 
+Outros Dispositivos 
+
+Device BreakPoints:
+
+Celular pequeno	-------> até 480px
+Celular padrão	-------> 481px – 767px
+Tablet	---------------> 768px – 1023px
+Laptop	---------------> 1024px – 1279px
+Desktop ---------------> 1280px – 1919px
+TV / 4K Display -------> 1920px ou mais
+*/
+
+@media screen and (min-width: 768px) {
+    span#bgr {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
